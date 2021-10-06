@@ -8,6 +8,7 @@ class Scoreboard(turtle.Turtle):
         super().__init__()
         self.hideturtle()
         self.penup()
+        self.color("white")
         self.goto(-280, 260)
         self.write(f"LEVEL : {level}", font=FONT)
 
