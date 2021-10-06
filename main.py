@@ -28,7 +28,7 @@ while game_is_on:
     while chicken.in_play_bounds():
         i += 1  # increasing i to make sure this while loop runs only until i = 25
         for x in random_cars[-35:]:
-            if x.xcor() < 20 and x.distance(chicken) <= 19:  # collision detection
+            if x.distance(chicken) <= 19:  # collision detection
                 game_is_on = False
                 score.game_over()
                 break
